@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Simple Calculator</title>
+        <link rel="stylesheet" href="v2style.css">
+        <script src="v2script.js"></script>
+    </head>
+    <body>
+        <div class="calculator">
+            <form action="calculate" method="GET">
+            <table class="cal" border="1" align="center">
+                <tr>
+                    <td colspan="4"><input type='text' name="res" id="display" placeholder="0" readonly></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='CE' onclick="document.getElementById('display').value=''"></td>
+                    <td><input type='button' value='C' onclick="document.getElementById('display').value=''"></td>
+                    <td><input type='button' value='DEL' onclick="del(document.getElementById('display').value)"></td>
+                    <td><input type='button' value='/' onclick="document.getElementById('display').value+='/'"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='7' onclick="document.getElementById('display').value+='7'"></td>
+                    <td><input type='button' value='8' onclick="document.getElementById('display').value+='8'"></td>
+                    <td><input type='button' value='9' onclick="document.getElementById('display').value+='9'"></td>
+                    <td><input type='button' value='*' onclick="document.getElementById('display').value+='*'"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='4' onclick="document.getElementById('display').value+='4'"></td>
+                    <td><input type='button' value='5' onclick="document.getElementById('display').value+='5'"></td>
+                    <td><input type='button' value='6' onclick="document.getElementById('display').value+='6'"></td>
+                    <td><input type='button' value='-' onclick="document.getElementById('display').value+='-'"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='1' onclick="document.getElementById('display').value+='1'"></td>
+                    <td><input type='button' value='2' onclick="document.getElementById('display').value+='2'"></td>
+                    <td><input type='button' value='3' onclick="document.getElementById('display').value+='3'"></td>
+                    <td><input type='button' value='+' onclick="document.getElementById('display').value+='+'"></td>
+                </tr>
+                <tr>
+                    <td><input type='button' value='+/-'></td>
+                    <td><input type='button' value='0' onclick="document.getElementById('display').value+='0'"></td>
+                    <td><input type='button' value='.' onclick="document.getElementById('display').value+='.'"></td>
+                    <td><input id="eq" type='submit' value='='></td>
+                </tr>
+            </table>
+        </form>
+        </div>
+    </body>
+</html>

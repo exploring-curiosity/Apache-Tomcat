@@ -1,0 +1,23 @@
+<data>
+    <vehicle>
+        <reg>1234</reg>
+        <name>Raj</name>
+        <type>car</type>
+        <model>bmw</model>
+        <color>red</color>
+    </vehicle>
+    <vehicle>
+        <reg>5678</reg>
+        <name>Kumar</name>
+        <type>bike</type>
+        <model>yamaha</model>
+        <color>black</color>
+    </vehicle>
+    <vehicle>
+        <reg>9101</reg>
+        <name>Madhu</name>
+        <type>car</type>
+        <model>ford</model>
+        <color>white</color>
+    </vehicle>
+</data>

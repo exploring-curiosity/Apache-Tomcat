@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>AJAX</title>
+    </head>
+    <body>
+        <button onclick="loadDoc()">Table</button>
+        <div id="container"></div>
+    </body>
+    <script>
+        function loadDoc(){
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log(this.readyState,this.status);
+                if(this.readyState==4 && this.status==200)
+                {
+                    disp(this)
+                }
+            }
+            xhttp.open("GET","data.xml",true);
+            xhttp.send()
+        }
+        function disp(xml){
+            var xmlDoc=xml.responseXML;
+            var x=xmlDoc.getElementsByTagName("vehicle");
+            var tbl = "<table border='1px solid black'><thead><tr><th>Type</th><th>Reg</th></thead><tbody>"
+            for(i=0;i<x.length;i++)
+            {
+                tbl+="<tr><td>"+x[i].getElementsByTagName("type")[0].childNodes[0].nodeValue+"</td><td>"+x[i].getElementsByTagName("reg")[0].childNodes[0].nodeValue+"</td></tr>";
+            }
+            tbl+="</tbody></table>"
+            document.getElementById("container").innerHTML=tbl;
+        }
+    </script>
+</html>

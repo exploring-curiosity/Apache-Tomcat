@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Employee</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="centre">Employee Details</h1>
+	<form action="http://localhost:8080/LabEX4/EX">
+	<input type="number" id="eid" name="eid" min="2016000" max="2025000" onblur="this.checkValidity();" placeholder="ID" required><br>
+	<input type="text" id="ename" oninvalid="alert('Name must be only alphabets and between 1 and 32 characters');" pattern="[A-Za-z ]{1,32}" onblur="this.checkValidity();" name="ename" placeholder="Name" required><br>
+	<input type="text" id="desig" name="desig" pattern="[A-Za-z ]{1,40}" onblur="this.checkValidity();" placeholder="Designation" required><br>
+	<select name="dept" id="dept" required>
+  		<option value="Developement">Developement</option>
+  		<option value="Research">Research</option>
+  		<option value="Production">Production</option>
+	</select>
+	<br>
+	<input type="number" id="sal" name="sal" min="20000" max="100000" onblur="this.checkValidity();" placeholder="Basic Salary" required><br>
+	<input type="tel" id="phone" name="phone" pattern="[0-9]{5}-[0-9]{5}" onblur="this.checkValidity();" placeholder="Contact Number" oninvalid="alert('match the pattern properly');" required><br>
+	<p style="color:grey;text-align: center;">example : 12345-67890</p><br>
+	<textarea id="addr" name="addr" rows="4" cols="50" onfocus="this.value ='';" 	onselect="document.getElementById('adr').innerHTML = 'You have entered 	address';" oninvalid="alert('address must be only alphanumeric');" pattern="[A-Za-z 0-9]{1,}" onblur="this.checkValidity();" required> Enter your permanent address	</textarea><br>
+	<p id="adr"></p>
+    <label for="dob">Date of Birth:</label>
+	<input type="date" id="dob" name="dob" required><br><br>
+  		<input type="radio" id="male" name="gender" value="male" required>
+  		<label for="male">Male </label>
+  		<input type="radio" id="female" name="gender" value="female">
+  		<label for="female">Female </label>
+  		<input type="radio" id="other" name="gender" value="other">
+  		<label for="other">Other</label><br><br>
+	<select name="ms" id="ms" required>
+  		<option value="Bachelor">Bachelor</option>
+  		<option value="Married">Married</option>
+  		<option value="Spinster">Spinster</option>
+  		<option value="Widow">Widow</option>
+	</select>
+    	<br>
+	<input type="reset" value="Reset">
+	<input type="submit" value="Submit">
+</body>
+</html>

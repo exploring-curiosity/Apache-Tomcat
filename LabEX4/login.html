@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<script>
+		function validate(){
+			var id=document.getElementById("id").value;
+			var pass=document.getElementById("pass").value;
+			var flag='0';
+			if(id=="user")
+			{
+				if(pass=="1234")
+				{
+					flag='1';
+				}
+			}
+			if(flag=='1')
+			{
+				location.replace("http://localhost:8080/LabEX4/valid");
+			}
+			else
+			{
+				alert('Invalid user ID /Password');
+				document.getElementById("id").value="";
+				document.getElementById("pass").value="";
+			}	
+		}
+	</script>
+	<link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+	<div class="formblock centre" style="height:50%;">
+	<form class="centre" name="login">
+		<input type='text' id="id" name="id" placeholder="User ID"><br><br>
+		<input type='password' id="pass" name="pass" placeholder="Password"><br><br>
+		<input type="button" value="Login" onclick="validate();">
+	</form>
+	</div>
+</body>
+</html>

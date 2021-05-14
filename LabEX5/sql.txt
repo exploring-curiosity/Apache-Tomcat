@@ -1,0 +1,11 @@
+CREATE TABLE data(
+    name varchar(32) PRIMARY KEY,
+    pass varchar(32),
+    age int,
+    dob date,
+    address varchar(100),
+    mobile varchar(10),
+    occupation varchar(32)
+);
+
+INSERT INTO data values("prakash","prakanesh",47,"1986-06-26","salem","8475638742","mason");

@@ -1,0 +1,67 @@
+<web-app>
+
+
+
+<servlet>
+	<servlet-name>valid</servlet-name>
+	<servlet-class>Home</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>valid</servlet-name>
+	<url-pattern>/valid</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>insert</servlet-name>
+	<servlet-class>Insert</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>insert</servlet-name>
+	<url-pattern>/ins</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>delete</servlet-name>
+	<servlet-class>delete</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>delete</servlet-name>
+	<url-pattern>/del</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>search</servlet-name>
+	<servlet-class>search</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>search</servlet-name>
+	<url-pattern>/srch</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>view</servlet-name>
+	<servlet-class>view</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>view</servlet-name>
+	<url-pattern>/view</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>update</servlet-name>
+	<servlet-class>update</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>update</servlet-name>
+	<url-pattern>/upd</url-pattern>
+</servlet-mapping>
+
+<servlet>
+	<servlet-name>db_upd</servlet-name>
+	<servlet-class>db_upd</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>db_upd</servlet-name>
+	<url-pattern>/upd1</url-pattern>
+</servlet-mapping>
+</web-app>

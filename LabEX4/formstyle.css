@@ -1,0 +1,85 @@
+.formblock{
+	display:flex;
+	border-radius:50px;
+	background:#191919;
+	width:30%;
+	height:90%;
+	text-align:center;
+}
+
+.centre{
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color:white;
+}
+.centre input[type='text'],.centre input[type='number'],.centre input[type='password'],.centre input[type='date'],.centre textarea,.centre input[type='submit']{
+	background:none;
+	display:block;
+	margin:5px auto;
+	text-align:center;
+	border:2px solid blue;
+	width:110%;
+	transform:translateX(-6%);
+	padding-top:10px;
+	padding-bottom: 10px; 
+	outline:none;
+	color:white;
+	border-radius:20px;
+}
+body{
+	background: #34495e;
+}
+.centre input[type='text']:focus,.centre input[type='number']:focus,.centre input[type='date']:focus,.centre textarea:focus,.centre input[type='password']:focus{
+	width:130%;
+	transform:translateX(-12%);
+}
+.slct{
+	background:none;
+	display:block;
+	margin:5px auto;
+	text-align-last:center;
+	border:2px solid blue;
+	width:110%;
+	transform:translateX(-6%);
+	padding-top:10px;
+	padding-bottom: 10px; 
+	outline:none;
+	color:white;
+	border-radius:20px;
+}
+.slct option{
+	background: none;
+	color:black;
+}
+.centre input[type='submit']{
+	border:2px solid green;
+	width:50%;
+}
+
+.centre input[type='submit']:hover{
+	border:2px solid green;
+	cursor:pointer;
+	background: #2ecc71;
+}
+.centre input[type='button']{
+	background:none;
+	display:block;
+	margin:5px auto;
+	text-align:center;
+	border:2px solid green;
+	width:50%;
+	padding-top:10px;
+	padding-bottom: 10px; 
+	outline:none;
+	color:white;
+	border-radius:20px;
+}
+.centre input[type='button']:hover{
+	border:2px solid green;
+	cursor:pointer;
+	background: #2ecc71;
+}

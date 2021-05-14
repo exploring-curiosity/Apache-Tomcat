@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Autocomplete Test</title>
+</head>
+<body>
+    <form name="myform">
+        <label for="country"> Country : </label>
+        <input type="text" id="country" name="country" list="dropdown" onInput="loadDoc();" >
+        <datalist id="dropdown">
+
+        </datalist>
+        <input type="button" value="go" onclick='alert("Your choice :"+document.getElementById("country").value);'>
+        
+    </form>
+    <script>
+    function loadDoc() {
+    var xhttp = new XMLHttpRequest();
+    var v=document.getElementById("country").value;
+    var url="GD?country="+v;
+    
+    xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        var val=xhttp.responseText;
+        document.getElementById("dropdown").innerHTML=val;
+    }
+    };
+    xhttp.open("GET", url, true);
+    xhttp.send();
+    }
+    </script>
+    </body>
+</html>

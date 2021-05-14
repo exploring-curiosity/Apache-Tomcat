@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lab Ex4</title>
+	<link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+	<div class="formblock centre">
+	<form class="centre" name="insert" action="./ins">
+		<h1> INSERT </h1>
+		<input type="text" name="id" id="id" placeholder="ID"><br>
+		<input type="text" name="name" id="name" placeholder="Name"><br>
+		<input type="number" name="age" id="age" placeholder="Age"><br>
+		<input type="radio" id="male" name="gender" value="male" required>
+  		<label for="male">Male  </label>
+  		<input type="radio" id="female" name="gender" value="female">
+  		<label for="female">Female  </label>
+  		<input type="radio" id="other" name="gender" value="other">
+  		<label for="other">Other</label><br>
+  		<textarea id="addr" name="addr" rows="4" cols="50" onfocus="this.value ='';" required>Address	</textarea><br>
+		<select class="slct" name="ms" id="ms" required>
+  			<option value="Bachelor">Bachelor</option>
+	  		<option value="Married">Married</option>
+	  		<option value="Spinster">Spinster</option>
+	  		<option value="Widow">Widow</option>
+		</select><br>
+		<label for="dov">Date of Visit:</label>
+		<input type="date" id="dov" name="dov" required><br>
+		<input style="float:left;width:33%;" type="submit" value="Insert">
+		<input style="float:left;width:32%;" type="button" value="View" onclick='window.location.href="http://localhost:8080/LabEX4/view";'>
+		<input style="float:left;width:32%;margin:5px 3px;" type="button" value="Home" onclick='window.location.href="http://localhost:8080/LabEX4/home.html";'>
+	</form>
+</div>
+</body>
+</html>

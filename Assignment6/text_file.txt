@@ -1,0 +1,4 @@
+<h1>Internet Programming</h1>
+<p>This is an example for AJAX.</p>
+<p>AJAX is not a programming Language.</p>
+<p>It is a technique for accessing web servers from a web page.</p>

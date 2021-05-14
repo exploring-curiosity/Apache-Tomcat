@@ -1,0 +1,10 @@
+create database practise;
+use practise;
+create table mvcinfo(
+    name varchar(20),
+    dob date
+);
+
+insert into mvcinfo values('Raj','2000-06-27');
+insert into mvcinfo values('Kumar','1992-02-01');
+insert into mvcinfo values('Akshay','1997-05-03');

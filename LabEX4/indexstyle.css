@@ -1,0 +1,36 @@
+body{
+	background: #34495e;
+}
+.block{
+	border-radius:50px;
+	background:#191919;
+	width:30%;
+	height:50%;
+	text-align:center;
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+button{
+	background:none;
+	display:block;
+	margin:5px auto;
+	text-align:center;
+	border:2px solid green;
+	width:50%;
+	height:20%;
+	padding-top:10px;
+	padding-bottom: 10px; 
+	outline:none;
+	color:white;
+	transform: translateY(100%);
+	border-radius:20px;
+}
+button:hover{
+	border:2px solid green;
+	cursor:pointer;
+	background: #2ecc71;
+}

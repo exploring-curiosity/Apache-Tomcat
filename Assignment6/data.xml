@@ -1,0 +1,29 @@
+<bank>
+    <brnch>
+        <state>TamilNadu</state>
+        <district>chennai</district>
+        <branch>a</branch>
+        <address>a</address>
+        <IFSC>1</IFSC>
+        <MICR>1</MICR>
+        <brcode>1</brcode>
+    </brnch>
+    <brnch>
+        <state>TamilNadu</state>
+        <district>Madurai</district>
+        <branch>b</branch>
+        <address>b</address>
+        <IFSC>2</IFSC>
+        <MICR>2</MICR>
+        <brcode>2</brcode>
+    </brnch>
+    <brnch>
+        <state>TamilNadu</state>
+        <district>salem</district>
+        <branch>c</branch>
+        <address>c</address>
+        <IFSC>3</IFSC>
+        <MICR>3</MICR>
+        <brcode>3</brcode>
+    </brnch>
+</bank>
